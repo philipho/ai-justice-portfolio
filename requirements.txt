@@ -1,0 +1,49 @@
+top level directories:
+ai-justice-portfolio/
+├── projects/
+│   ├── legal-llm-assistant/
+│   ├── court-scheduler/
+│   └── probation-risk-classifier/
+├── shared/
+│   ├── utils/              # Shared Python utilities, logging, preprocessing
+│   └── data/               # Sample datasets, mock inputs
+├── notebooks/              # Experimental Jupyter notebooks
+├── terraform/              # Infrastructure-as-code configs
+├── docker/                 # Dockerfiles and compose setups
+├── .github/                # GitHub Actions workflows
+├── README.md
+└── requirements.txt
+
+
+Example project layout:
+
+legal-llm-assistant/
+├── backend/
+│   ├── app/
+│   │   ├── main.py          # FastAPI entrypoint
+│   │   ├── routes/          # Prediction and summary endpoints
+│   │   ├── services/        # LangChain chains, evaluation logic
+│   │   └── models/          # Pydantic schemas
+│   └── tests/
+├── frontend/
+│   ├── pages/               # Next.js or Streamlit views
+│   └── components/          # Reusable UI elements
+├── observability/
+│   ├── langfuse_config.yaml
+│   └── logs/
+├── deployment/
+│   ├── Dockerfile
+│   └── azure.yaml           # Terraform or Bicep files
+├── README.md
+└── requirements.txt
+
+
+Extras to Include in Each Project
+README.md: Overview, tech stack, setup guide, key learnings, screenshots
+
+Demo notebook: Quick Jupyter walkthrough of the AI component
+
+Sample Inputs/Outputs: Include anonymized .json or .csv files
+
+Model cards (optional): Document assumptions, limitations, risks
+
